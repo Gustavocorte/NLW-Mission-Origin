@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendar de pizzas</title>
+    <link rel="stylesheet" href="./Cardapio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <ul>
+            <li>
+                <h1>Cardapio</h1>
+                <h2>vendas de pizzas</h2>
+            </li>
+        </ul>
+    </header>
+    
+    <section>    
+        <form>
+            <h3>Selecione a pizza que foi vendida</h3>
+            <ul>
+                <li>
+                    <img src="https://www.nonoludovico.com.br/wp-content/uploads/2019/12/pizza-mussarela-nono-ludovico.png" alt="">
+                <input type="radio" id="mussarela" name="pizzas">
+                <label for="mussarela">Mussarela</label></li>
+                <li><img src="https://www.nonoludovico.com.br/wp-content/uploads/2019/12/pizza-portuguesa-nono-ludovico.png" alt=""><input type="radio" id="portuguesa" name="pizzas">
+                <label for="portuguesa">Portuguesa</label></li>
+                <li><img src="https://www.nonoludovico.com.br/wp-content/uploads/2019/12/pizza-marguerita-nono-ludovico.png" alt=""><input type="radio" id="mista" name="pizzas">
+                <label for="mista">Marguerita</label></li>
+                <li><img src="https://www.nonoludovico.com.br/wp-content/uploads/2019/12/nono-ludovico-pizza-calabresa.png" alt=""><input type="radio" id= "calabresa" name="pizzas">
+                <label for="calabresa">Calabresa</label></li>
+            </ul>
+        </form>
+    </section>
+
+    <section>
+        <button id="vendas">Vendas</button><button id="estorno">Estorno</button>
+    </section>
+
+    <section id="table">
+        <table>
+            <tr>
+                <th>Sabores</th><th>Quantidade</th><th>Valores</th>
+            </tr>
+            <tr>
+                <td>Portuguesa</td><td id="resultadoPortuguesa"></td><td id="vendaPortuguesa"></td>
+            </tr>
+            <tr>
+                <td>Mussarela</td><td id="resultadoMussarela"></td><td id="vendaMussarela"></td>
+            </tr>
+            <tr>
+                <td>Mista</td><td id="resultadoMista"></td><td id="vendaMista"></td>
+            </tr>
+            <tr>
+                <td>Calabresa</td><td id="resultadoCalabresa"></td ><td id="vendaCalabresa"></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <button id="export">Planilha</button>
+    </section>
+    <script src="tableToExcel.js"></script>
+    <script src="./Cardapio.js"></script>
+</body>
+</html>

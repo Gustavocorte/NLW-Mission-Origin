@@ -6,7 +6,7 @@
 }
 
 :root {
-  --hue: 190;
+  --hue: 33;
   --primary-color: hsl(var(--hue), 100%, 26%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
@@ -66,13 +66,14 @@ section {
 section header h4 {
   font-size: 1.4rem;
   font-weight: 700;
-  line-height: 150%;
+  line-height: 2rem;
   letter-spacing: 0.08rem;
   color: var(--primary-color);
 
   text-transform: uppercase;
 
   margin-bottom: 1.6rem;
+  margin-top: 5rem;
 }
 
 section header h2 {
@@ -360,7 +361,15 @@ body.menu-expanded button path {
 
 /*=== SERVICES =================================*/
 #services header h2 {
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
+}
+
+#services .cards h2 {
+  padding-top: 2rem;
+}
+
+#services .cards p {
+  padding-top: 2rem;
 }
 
 #services .cards {
